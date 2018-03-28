@@ -1,0 +1,68 @@
+.root {
+	-fx-font-family: "Josefin Sans" ;
+	-fx-font-smoothing-type: black;
+	-fx-background-color: #eceee4;
+}
+.hangman-board {
+	-fx-background-color: #000000;
+	-fx-background-image: url("file:resources/images/background.jpg");
+	-fx-background-repeat: stretch;
+	-fx-background-position: center center;
+	-fx-padding: 15px ;
+	-fx-alignment: center ;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);
+}
+
+.hangman-board > .board-grid {
+	-fx-background-color: white ;
+	-fx-border-color: transparent ;
+}
+
+.hangman-board .label:disabled {
+	-fx-opacity: 1.0 ;
+}
+
+.hangman-board > .board-grid > .label {
+	-fx-font-size: 128pt ;
+}
+
+.status {
+	-fx-font-size: 20pt ;
+	-fx-text-fill: #000000 ;
+}
+
+.guessWord {
+    -fx-font-size: 20pt;
+}
+
+Label {
+    -fx-label-padding: 0 0 20px 0;
+}
+
+#statusLabel {
+	-fx-font-weight: bold;
+}
+
+#buttons{
+	-fx-padding: 0px 0px 20px 0px;
+}
+
+#enterALetterLabel {
+	-fx-padding: 0px 30px 0px 0px;
+}
+#textField {
+	-fx-background-color: #d3d3d3;
+	-fx-padding: 5px 5px 5px 15px;
+	-fx-font-size: 20pt;
+}
+#userInput {
+	-fx-padding: 0px 50px 50px 50px;
+	-fx-font-size: 16pt;
+	-fx-text-fill: #71717a;
+}
+
+#startButton{
+	-fx-padding: 20px 20px 20px 20px;
+	-fx-font-size: 16pt;
+	-fx-text-fill: black;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import java.lang.String?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.FontWeight?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.HBox?>
+<BorderPane xmlns:fx="http://javafx.com/fxml">
+
+    <top>
+        <MenuBar>
+            <Menu text="Game">
+                <MenuItem text="Start New Game" onAction="#newHangman"/>
+                <MenuItem text="Quit" onAction="#quit"/>
+            </Menu>
+            <Menu text="Misc">
+                <MenuItem text="How to play" onAction="#howToPlay"/>
+                <MenuItem text="Credits" onAction="#credits"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <HBox fx:id="board">
+            <styleClass>
+                <String fx:value="hangman-board"/>
+            </styleClass>
+        </HBox>
+    </center>
+
+    <bottom>
+        <VBox alignment="CENTER">
+            <Label fx:id="guessWordLabel">
+                <styleClass>
+                    <String fx:value="guessWord"/>
+                </styleClass>
+            </Label>
+            <Label fx:id="statusLabel">
+                <styleClass>
+                    <String fx:value="status"/>
+                </styleClass>
+            </Label>
+            <GridPane fx:id="buttons" hgap="10" vgap="10" alignment="CENTER">
+                <!--Buttons will be dynamically generated here.-->
+            </GridPane>
+            <Button fx:id="startButton" text="Start New Game"
+                    onAction="#newHangman"/>
+            <Label fx:id="userInput">
+
+                <styleClass>
+                    <String fx:value="status"/>
+                </styleClass>
+            </Label>
+
+        </VBox>
+    </bottom>
+
+</BorderPane>

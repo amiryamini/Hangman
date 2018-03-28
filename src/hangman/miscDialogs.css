@@ -1,0 +1,20 @@
+.miscDialogs{
+    -fx-background-color: #F6F6F6;
+    -fx-font-family: "Josefin Sans" ;
+    -fx-font-smoothing-type: black;
+    -fx-padding: 15px 10px;
+}
+.miscDialogs > *.button-bar > *.container{
+    -fx-background-color: #f6f6f6;
+}
+.miscDialogs > *.label.content{
+    -fx-font-size: 16px;
+}
+.miscDialogs:header *.header-panel{
+    -fx-font-weight: bold;
+}
+.miscDialogs:header *.header-panel *.label{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-fill: #292929;
+}
